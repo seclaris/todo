@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>ToDoList</h1>
+        <section>
+            <h2>Pending To-Do's</h2>
+            <ul id="pending-list">
+            </ul>
+        </section>
+        <section>
+            <h2>Completed To-Do's</h2>
+            <ul id="completed-list">
+            </ul>
+            <span class="error-message" id="clear-error"></span>
+            <button type="button" id="clear-btn">Clear Completed</button>
+        </section>
+        <form id="todo-form"> 
+          <input type="text" id="task-input" placeholder="Add new task" name="task">
+          <button type="submit" id="add-btn">Add Task</button>
+        </form>
+        <span class="error-message" id="form-error"></span>
+      </div>
+    </div>
+	  <script src="js/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/5af80ed704.js" crossorigin="anonymous"></script>
+  </body>
+</html>
